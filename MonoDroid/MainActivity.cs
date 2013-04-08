@@ -69,17 +69,25 @@ namespace MonoDroid {
 		}
 
 		public void PushFragment(Android.Support.V4.App.Fragment frag) {
-			var fm = this.SupportFragmentManager;
-			var trans = fm.BeginTransaction();
+			var trans = StartNewTransAction(true);
 			var contentFrameLayout = this.FindViewById(this._contentFrameLayoutId);
 			if (contentFrameLayout != null ) {
-				trans.Replace(this._contentFrameLayoutId, frag);
+				trans.Add(this._contentFrameLayoutId, frag);
 			}
 			else {
-				trans.Replace(this._menuFrameLayoutId, frag);
+				trans.Add(this._menuFrameLayoutId, frag);
 			}
 			trans.AddToBackStack(null);
 			trans.Commit();
+		}
+
+		Android.Support.V4.App.FragmentTransaction StartNewTransAction(bool useAnimations) {
+			var fm = this.SupportFragmentManager;
+			var trans = fm.BeginTransaction();
+			if (useAnimations) {
+				trans.SetCustomAnimations(Resource.Animation.fragment_trans_in, Resource.Animation.fragment_trans_out);	
+			}
+			return trans;
 		}
 
 		public void ShowSample(Sample sample) {

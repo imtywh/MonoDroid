@@ -23,6 +23,20 @@ namespace MonoDroid
 		{
 		}
 		
+		public partial class Animation
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int fragment_trans_in = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int fragment_trans_out = 2130968577;
+			
+			private Animation()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -34,8 +48,8 @@ namespace MonoDroid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int style_bottom_tab_bar_item_text_color = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int style_bottom_tab_bar_item_text_color = 2131034112;
 			
 			private Color()
 			{
@@ -45,17 +59,17 @@ namespace MonoDroid
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f050003
-			public const int style_bottom_tab_bar_item_drawable_padding = 2131034115;
+			// aapt resource value: 0x7f060003
+			public const int style_bottom_tab_bar_item_drawable_padding = 2131099651;
 			
-			// aapt resource value: 0x7f050000
-			public const int style_bottom_tab_bar_item_margin_top = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int style_bottom_tab_bar_item_margin_top = 2131099648;
 			
-			// aapt resource value: 0x7f050002
-			public const int style_bottom_tab_bar_item_padding_top = 2131034114;
+			// aapt resource value: 0x7f060002
+			public const int style_bottom_tab_bar_item_padding_top = 2131099650;
 			
-			// aapt resource value: 0x7f050001
-			public const int style_bottom_tab_text_size = 2131034113;
+			// aapt resource value: 0x7f060001
+			public const int style_bottom_tab_text_size = 2131099649;
 			
 			private Dimension()
 			{
@@ -94,98 +108,98 @@ namespace MonoDroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f090001
-			public const int activity_actionbarmenu_textview = 2131296257;
+			// aapt resource value: 0x7f0a0001
+			public const int activity_actionbarmenu_textview = 2131361793;
 			
-			// aapt resource value: 0x7f090017
-			public const int activity_main_list_item_imageview = 2131296279;
+			// aapt resource value: 0x7f0a0017
+			public const int activity_main_list_item_imageview = 2131361815;
 			
-			// aapt resource value: 0x7f090018
-			public const int activity_main_list_item_textview = 2131296280;
+			// aapt resource value: 0x7f0a0018
+			public const int activity_main_list_item_textview = 2131361816;
 			
-			// aapt resource value: 0x7f090012
-			public const int edit_name = 2131296274;
+			// aapt resource value: 0x7f0a0012
+			public const int edit_name = 2131361810;
 			
-			// aapt resource value: 0x7f090000
-			public const int fragment_actionbar_tabs_viewpager = 2131296256;
+			// aapt resource value: 0x7f0a0000
+			public const int fragment_actionbar_tabs_viewpager = 2131361792;
 			
-			// aapt resource value: 0x7f090006
-			public const int fragment_animations_layout_animation_button = 2131296262;
+			// aapt resource value: 0x7f0a0006
+			public const int fragment_animations_layout_animation_button = 2131361798;
 			
-			// aapt resource value: 0x7f090005
-			public const int fragment_animations_layout_animation_imageview = 2131296261;
+			// aapt resource value: 0x7f0a0005
+			public const int fragment_animations_layout_animation_imageview = 2131361797;
 			
-			// aapt resource value: 0x7f090003
-			public const int fragment_animations_layout_animation_linear_layout = 2131296259;
+			// aapt resource value: 0x7f0a0003
+			public const int fragment_animations_layout_animation_linear_layout = 2131361795;
 			
-			// aapt resource value: 0x7f090004
-			public const int fragment_animations_layout_animation_textview = 2131296260;
+			// aapt resource value: 0x7f0a0004
+			public const int fragment_animations_layout_animation_textview = 2131361796;
 			
-			// aapt resource value: 0x7f090007
-			public const int fragment_animations_property_animation_seekbar1 = 2131296263;
+			// aapt resource value: 0x7f0a0007
+			public const int fragment_animations_property_animation_seekbar1 = 2131361799;
 			
-			// aapt resource value: 0x7f090008
-			public const int fragment_animations_property_animation_seekbar2 = 2131296264;
+			// aapt resource value: 0x7f0a0008
+			public const int fragment_animations_property_animation_seekbar2 = 2131361800;
 			
-			// aapt resource value: 0x7f09000a
-			public const int fragment_animations_view_animation_button = 2131296266;
+			// aapt resource value: 0x7f0a000a
+			public const int fragment_animations_view_animation_button = 2131361802;
 			
-			// aapt resource value: 0x7f090009
-			public const int fragment_animations_view_animation_imageView = 2131296265;
+			// aapt resource value: 0x7f0a0009
+			public const int fragment_animations_view_animation_imageView = 2131361801;
 			
-			// aapt resource value: 0x7f090002
-			public const int fragment_animations_viewpager = 2131296258;
+			// aapt resource value: 0x7f0a0002
+			public const int fragment_animations_viewpager = 2131361794;
 			
-			// aapt resource value: 0x7f090011
-			public const int fragment_collection_demo_pager_itle_strip = 2131296273;
+			// aapt resource value: 0x7f0a0011
+			public const int fragment_collection_demo_pager_itle_strip = 2131361809;
 			
-			// aapt resource value: 0x7f090010
-			public const int fragment_collection_demo_viewpager = 2131296272;
+			// aapt resource value: 0x7f0a0010
+			public const int fragment_collection_demo_viewpager = 2131361808;
 			
-			// aapt resource value: 0x7f090013
-			public const int fragment_dialog_test_button_show = 2131296275;
+			// aapt resource value: 0x7f0a0013
+			public const int fragment_dialog_test_button_show = 2131361811;
 			
-			// aapt resource value: 0x7f090014
-			public const int fragment_dialog_test_popup_edit_name = 2131296276;
+			// aapt resource value: 0x7f0a0014
+			public const int fragment_dialog_test_popup_edit_name = 2131361812;
 			
-			// aapt resource value: 0x7f090015
-			public const int fragment_dialog_test_popup_lbl_your_name = 2131296277;
+			// aapt resource value: 0x7f0a0015
+			public const int fragment_dialog_test_popup_lbl_your_name = 2131361813;
 			
-			// aapt resource value: 0x7f090016
-			public const int fragment_dialog_test_popup_txt_your_name = 2131296278;
+			// aapt resource value: 0x7f0a0016
+			public const int fragment_dialog_test_popup_txt_your_name = 2131361814;
 			
-			// aapt resource value: 0x7f09001a
-			public const int fragment_navigation_button = 2131296282;
+			// aapt resource value: 0x7f0a001a
+			public const int fragment_navigation_button = 2131361818;
 			
-			// aapt resource value: 0x7f090019
-			public const int fragment_navigation_edittext = 2131296281;
+			// aapt resource value: 0x7f0a0019
+			public const int fragment_navigation_edittext = 2131361817;
 			
-			// aapt resource value: 0x7f09001b
-			public const int fragment_navigation_target_textview = 2131296283;
+			// aapt resource value: 0x7f0a001b
+			public const int fragment_navigation_target_textview = 2131361819;
 			
-			// aapt resource value: 0x7f09001c
-			public const int fragment_pager_tabstrip_viewpager = 2131296284;
+			// aapt resource value: 0x7f0a001c
+			public const int fragment_pager_tabstrip_viewpager = 2131361820;
 			
-			// aapt resource value: 0x7f09001d
-			public const int fragment_pagertabstrip_tabstrip = 2131296285;
+			// aapt resource value: 0x7f0a001d
+			public const int fragment_pagertabstrip_tabstrip = 2131361821;
 			
-			// aapt resource value: 0x7f09001e
-			public const int fragment_popup_menu_button = 2131296286;
+			// aapt resource value: 0x7f0a001e
+			public const int fragment_popup_menu_button = 2131361822;
 			
-			// aapt resource value: 0x7f09000b
-			public const int frameLayout1 = 2131296267;
+			// aapt resource value: 0x7f0a000b
+			public const int frameLayout1 = 2131361803;
 			
-			// aapt resource value: 0x7f09000d
-			public const int radioButton1 = 2131296269;
+			// aapt resource value: 0x7f0a000d
+			public const int radioButton1 = 2131361805;
 			
-			// aapt resource value: 0x7f09000e
-			public const int radioButton2 = 2131296270;
+			// aapt resource value: 0x7f0a000e
+			public const int radioButton2 = 2131361806;
 			
-			// aapt resource value: 0x7f09000f
-			public const int radioButton3 = 2131296271;
+			// aapt resource value: 0x7f0a000f
+			public const int radioButton3 = 2131361807;
 			
-			// aapt resource value: 0x7f09000c
-			public const int radioGroup1 = 2131296268;
+			// aapt resource value: 0x7f0a000c
+			public const int radioGroup1 = 2131361804;
 			
 			private Id()
 			{
@@ -254,11 +268,11 @@ namespace MonoDroid
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7f080000
-			public const int fragment_actionbarmenu_menu = 2131230720;
+			// aapt resource value: 0x7f090000
+			public const int fragment_actionbarmenu_menu = 2131296256;
 			
-			// aapt resource value: 0x7f080001
-			public const int fragment_popup_menu_popup = 2131230721;
+			// aapt resource value: 0x7f090001
+			public const int fragment_popup_menu_popup = 2131296257;
 			
 			private Menu()
 			{
@@ -268,14 +282,14 @@ namespace MonoDroid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int app_name = 2131099648;
+			// aapt resource value: 0x7f070000
+			public const int app_name = 2131165184;
 			
-			// aapt resource value: 0x7f060002
-			public const int fragment_navigation_button_text = 2131099650;
+			// aapt resource value: 0x7f070002
+			public const int fragment_navigation_button_text = 2131165186;
 			
-			// aapt resource value: 0x7f060001
-			public const int fragment_navigation_edittext_hint = 2131099649;
+			// aapt resource value: 0x7f070001
+			public const int fragment_navigation_edittext_hint = 2131165185;
 			
 			private String()
 			{
@@ -285,11 +299,11 @@ namespace MonoDroid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f070000
-			public const int bottom_tab_bar = 2131165184;
+			// aapt resource value: 0x7f080000
+			public const int bottom_tab_bar = 2131230720;
 			
-			// aapt resource value: 0x7f070001
-			public const int bottom_tab_bar_item = 2131165185;
+			// aapt resource value: 0x7f080001
+			public const int bottom_tab_bar_item = 2131230721;
 			
 			private Style()
 			{

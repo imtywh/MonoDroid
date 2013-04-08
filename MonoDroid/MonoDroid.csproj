@@ -69,6 +69,7 @@
     <Compile Include="Samples\AnimationsFragment.cs" />
     <Compile Include="Samples\BottomTabbarFragment.cs" />
     <Compile Include="Samples\TestDialogFragment.cs" />
+    <Compile Include="Samples\GuestureActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Diagrams\Android.Animation.cd" />
@@ -104,10 +105,15 @@
     <AndroidResource Include="Resources\drawable\style_bottom_tab_bar_item_background_selector.axml" />
     <AndroidResource Include="Resources\layout\fragment_dialog_test.axml" />
     <AndroidResource Include="Resources\layout\fragment_dialog_test_popup.axml" />
+    <AndroidResource Include="Resources\anim\fragment_trans_in.axml" />
+    <AndroidResource Include="Resources\anim\fragment_trans_out.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup />
   <ItemGroup>
     <AndroidJavaLibrary Include="SupportLib\android-support-v4.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\anim\" />
   </ItemGroup>
 </Project>
