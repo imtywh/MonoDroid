@@ -6,7 +6,9 @@
     android:layout_gravity="center"
     android:orientation="vertical"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="@android:color/background_dark"
+    >
     <Button
         android:text="Show Dialog"
         android:layout_width="fill_parent"

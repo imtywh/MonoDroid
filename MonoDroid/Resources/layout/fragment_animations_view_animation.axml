@@ -4,7 +4,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="@android:color/background_dark"
+    >
     <ImageView
         android:src="@drawable/image2"
         android:layout_width="wrap_content"
