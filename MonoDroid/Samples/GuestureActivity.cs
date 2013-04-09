@@ -19,37 +19,48 @@ namespace MonoDroid.Samples {
 	[Activity (Label = "Guestures Test")]
 	public class GuestureActivity : Activity {
 
-		private GestureDetectorCompat _detector;
+		private static string DebugTag = "VelocityTracker";
+
+		private VelocityTracker _velocityTracket;
 
 		protected override void OnCreate(Bundle bundle) {
 			base.OnCreate(bundle);
 			// Create your application here
 			this.SetContentView(Resource.Layout.activity_gesture);
-
-			this._detector = new GestureDetectorCompat(this, new MyGestureListener());
 		}
 
 		public override bool OnTouchEvent(MotionEvent e) {
-			this._detector.OnTouchEvent(e);
-			return base.OnTouchEvent(e);
+
+			var index = e.ActionIndex;
+			var action = (MotionEventActions)e.ActionMasked;
+			var pointerId = e.GetPointerId(index);
+
+			switch (action) {
+				case MotionEventActions.Down:
+					if (this._velocityTracket == null) {
+						this._velocityTracket = VelocityTracker.Obtain();
+					}
+					else {
+						this._velocityTracket.Clear();
+					}
+					this._velocityTracket.AddMovement(e);
+					break;
+				case MotionEventActions.Move:
+					this._velocityTracket.AddMovement(e);
+					this._velocityTracket.ComputeCurrentVelocity(1000);
+					Log.Debug(DebugTag, "X velocity: " + VelocityTrackerCompat.GetXVelocity(this._velocityTracket, pointerId));
+					Log.Debug(DebugTag, "Y velocity: " + VelocityTrackerCompat.GetYVelocity(this._velocityTracket, pointerId));
+					break;
+				case MotionEventActions.Cancel:
+				case MotionEventActions.Up:
+					this._velocityTracket.Recycle();
+					break;
+				default:
+					break;
+			}
+			return true;
 		}
 		
-	}
-
-	class MyGestureListener : GestureDetector.SimpleOnGestureListener {
-
-		private static string DebugTag = "MyGestureListener";
-
-		public override bool OnDown(MotionEvent e) {
-			Log.Debug(DebugTag, string.Format("OnDown: {0}", e));
-			return true;
-		}
-
-		public override bool OnFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-			Log.Debug(DebugTag, string.Format("OnFling: {0} {1}", e1, e2));
-			return true;
-		}
-
 	}
 
 }
