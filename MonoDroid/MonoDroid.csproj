@@ -107,6 +107,7 @@
     <AndroidResource Include="Resources\layout\fragment_dialog_test_popup.axml" />
     <AndroidResource Include="Resources\anim\fragment_trans_in.axml" />
     <AndroidResource Include="Resources\anim\fragment_trans_out.axml" />
+    <AndroidResource Include="Resources\layout\activity_gesture.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup />
